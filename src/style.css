@@ -19,8 +19,8 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
+  height: 60px; /* проверьте точное значение в Figma */
+  padding: 0 50px; /* проверьте горизонтальные паддинги шапки */
 }
 
 .logo {
@@ -30,27 +30,27 @@ body {
 
 .nav__list {
   display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.nav__item {
-  margin-right: 20px;
-}
-
-.nav__item:last-child {
-  margin-right: 0;
-}
 
 .nav__link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 60px;
-  color: var(--text-color);
+  height: 100%;
+  color: inherit;
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+.nav__item {
   position: relative;
-  font-size: 12px;
+  height: 100%;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
 }
 
 .nav__link:hover {
